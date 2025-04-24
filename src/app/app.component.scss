@@ -1,0 +1,17 @@
+.UI{
+    height: 100%;
+    display: flex;
+    background-color: #212121e6;
+    .left-panal{
+        width: var(--width);
+        overflow: hidden;
+        transition: 0.2s ease-in-out;
+    }
+    .right-panal{
+        width: 100%;
+    }
+    .title{
+        font-size: 32px;
+        font-weight: bold;
+    }
+}

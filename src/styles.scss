@@ -1,2 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
+:root {
+    --width: 260px;
+}
+html,
+    body,
+    app-root
+    {
+        display: block;
+        margin: 0px;
+        height: 100%;
+    }
