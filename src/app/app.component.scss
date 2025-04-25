@@ -3,12 +3,12 @@
     display: flex;
     background-color: #212121e6;
     .left-panal{
-        width: var(--width);
         overflow: hidden;
         transition: 0.2s ease-in-out;
+        width: var(--width); 
     }
     .right-panal{
-        width: 100%;
+        width: calc(100% - var(--width));
     }
     .title{
         font-size: 32px;

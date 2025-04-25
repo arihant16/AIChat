@@ -2,6 +2,10 @@
 @import "primeicons/primeicons.css";
 :root {
     --width: 260px;
+    --hover-color:#ffffff26;
+    --spacing:0.25rem;
+    --border-radius:0.25rem;
+    --header-height:3.5rem;
 }
 html,
     body,
@@ -10,4 +14,12 @@ html,
         display: block;
         margin: 0px;
         height: 100%;
+    }
+    @for $i from 1 through 10 {
+        .pd-#{$i}{padding: calc(#{$i} * var(--spacing));}
+        .pdt-#{$i}{padding-top:calc(#{$i} * var(--spacing))}
+        .pdb-#{$i}{padding-bottom:calc(#{$i} * var(--spacing))}
+        .pdl-#{$i}{padding-left:calc(#{$i} * var(--spacing))}
+        .pdr-#{$i}{padding-right:calc(#{$i} * var(--spacing))}
+        .br-#{$i}{border-radius:calc(#{$i} * var(--border-radius))}
     }
